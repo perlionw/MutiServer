@@ -1,0 +1,45 @@
+﻿  Validating sources
+  Copying sources remotely to '192.168.43.167'
+  Validating architecture
+  Starting remote build
+  Compiling sources:
+  main.cpp
+E:\jOB\LinuxProject\TCPPoject\TCPProject\TcpClient\XmlPacket.h(6,39): warning : missing terminating ' character
+E:\jOB\LinuxProject\TCPPoject\TCPProject\TcpClient\XmlPacket.h(6,39): warning :  #include "rapidxml/rapidxml_utils.hpp"'
+E:\jOB\LinuxProject\TCPPoject\TCPProject\TcpClient\XmlPacket.h(6,39): warning :                                        ^
+E:\jOB\LinuxProject\TCPPoject\TCPProject\TcpClient\XmlPacket.h(6,39): warning : extra tokens at end of #include directive
+E:\jOB\LinuxProject\TCPPoject\TCPProject\TcpClient\TcpClient.h(52,39): warning : conversion to ‘int’ from ‘size_t {aka long unsigned int}’ may alter its value [-Wconversion]
+E:\jOB\LinuxProject\TCPPoject\TCPProject\TcpClient\TcpClient.h(52,39): warning :    return evbuffer_get_length(m_ReadBuf);
+E:\jOB\LinuxProject\TCPPoject\TCPProject\TcpClient\TcpClient.h(52,39): warning :                                        ^
+E:\jOB\LinuxProject\TCPPoject\TCPProject\TcpClient\TcpClient.h(67,49): warning : conversion to ‘int’ from ‘ssize_t {aka long int}’ may alter its value [-Wconversion]
+E:\jOB\LinuxProject\TCPPoject\TCPProject\TcpClient\TcpClient.h(67,49): warning :    return evbuffer_copyout(m_ReadBuf, buffer, len);
+E:\jOB\LinuxProject\TCPPoject\TCPProject\TcpClient\TcpClient.h(67,49): warning :                                                  ^
+E:\jOB\LinuxProject\TCPPoject\TCPProject\TcpClient\TcpClient.h(73,40): warning : conversion to ‘int’ from ‘size_t {aka long unsigned int}’ may alter its value [-Wconversion]
+E:\jOB\LinuxProject\TCPPoject\TCPProject\TcpClient\TcpClient.h(73,40): warning :    return evbuffer_get_length(m_WriteBuf);
+E:\jOB\LinuxProject\TCPPoject\TCPProject\TcpClient\TcpClient.h(73,40): warning :                                         ^
+E:\jOB\LinuxProject\TCPPoject\TCPProject\TcpClient\main.cpp(53,24): warning : conversion to ‘int’ from ‘std::__cxx11::basic_string<char>::size_type {aka long unsigned int}’ may alter its value [-Wconversion]
+E:\jOB\LinuxProject\TCPPoject\TCPProject\TcpClient\main.cpp(53,24): warning :    int len = xml.length();
+E:\jOB\LinuxProject\TCPPoject\TCPProject\TcpClient\main.cpp(53,24): warning :                         ^
+E:\jOB\LinuxProject\TCPPoject\TCPProject\TcpClient\main.cpp(49,17): warning : unused variable ‘begin0’ [-Wunused-variable]
+E:\jOB\LinuxProject\TCPPoject\TCPProject\TcpClient\main.cpp(49,17): warning :    unsigned char begin0 = content.begin_buf[0];
+E:\jOB\LinuxProject\TCPPoject\TCPProject\TcpClient\main.cpp(49,17): warning :                  ^
+E:\jOB\LinuxProject\TCPPoject\TCPProject\TcpClient\main.cpp(50,17): warning : unused variable ‘begin1’ [-Wunused-variable]
+E:\jOB\LinuxProject\TCPPoject\TCPProject\TcpClient\main.cpp(50,17): warning :    unsigned char begin1 = content.begin_buf[1];
+E:\jOB\LinuxProject\TCPPoject\TCPProject\TcpClient\main.cpp(50,17): warning :                  ^
+E:\jOB\LinuxProject\TCPPoject\TCPProject\TcpClient\main.cpp(53,7): warning : unused variable ‘len’ [-Wunused-variable]
+E:\jOB\LinuxProject\TCPPoject\TCPProject\TcpClient\main.cpp(53,7): warning :    int len = xml.length();
+E:\jOB\LinuxProject\TCPPoject\TCPProject\TcpClient\main.cpp(53,7): warning :        ^
+E:\jOB\LinuxProject\TCPPoject\TCPProject\TcpClient\main.cpp(54,7): warning : unused variable ‘xml_length’ [-Wunused-variable]
+E:\jOB\LinuxProject\TCPPoject\TCPProject\TcpClient\main.cpp(54,7): warning :    int xml_length = content.xml_length;
+E:\jOB\LinuxProject\TCPPoject\TCPProject\TcpClient\main.cpp(54,7): warning :        ^
+E:\jOB\LinuxProject\TCPPoject\TCPProject\TcpClient\main.cpp(55,17): warning : unused variable ‘end0’ [-Wunused-variable]
+E:\jOB\LinuxProject\TCPPoject\TCPProject\TcpClient\main.cpp(55,17): warning :    unsigned char end0 = content.end_buf[0];
+E:\jOB\LinuxProject\TCPPoject\TCPProject\TcpClient\main.cpp(55,17): warning :                  ^
+E:\jOB\LinuxProject\TCPPoject\TCPProject\TcpClient\main.cpp(56,17): warning : unused variable ‘end1’ [-Wunused-variable]
+E:\jOB\LinuxProject\TCPPoject\TCPProject\TcpClient\main.cpp(56,17): warning :    unsigned char end1 = content.end_buf[1];
+E:\jOB\LinuxProject\TCPPoject\TCPProject\TcpClient\main.cpp(56,17): warning :                  ^
+E:\jOB\LinuxProject\TCPPoject\TCPProject\TcpClient\main.cpp(22,21): warning : conversion to ‘int’ from ‘std::__cxx11::basic_string<char>::size_type {aka long unsigned int}’ may alter its value [-Wconversion]
+E:\jOB\LinuxProject\TCPPoject\TCPProject\TcpClient\main.cpp(22,21): warning :   content.xml_length = xml.length();
+E:\jOB\LinuxProject\TCPPoject\TCPProject\TcpClient\main.cpp(22,21): warning :                      ^
+  Linking objects
+  TcpClient.vcxproj -> E:\jOB\LinuxProject\TCPPoject\TCPProject\TcpClient\bin\x64\Debug\TcpClient.out

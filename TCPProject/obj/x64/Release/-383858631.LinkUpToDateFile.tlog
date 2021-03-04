@@ -1,0 +1,1 @@
+g++ -o "/home/gzrobot/projects/TCPProject/bin/x64/Release/TCPProject.out" -Wl,--no-undefined -Wl,-L/usr/local/lib -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack /home/gzrobot/projects/TCPProject/obj/x64/Release/MutiServer.o /home/gzrobot/projects/TCPProject/obj/x64/Release/Source.o -levent_core -lpthread

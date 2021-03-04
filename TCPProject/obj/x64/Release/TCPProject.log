@@ -1,0 +1,43 @@
+﻿  Validating sources
+  Copying sources remotely to '192.168.43.167'
+  Validating architecture
+  Starting remote build
+  Compiling sources:
+  MutiServer.cpp
+E:\jOB\LinuxProject\TCPPoject\TCPProject\TCPProject\MutiServer.h(58,39): warning : conversion to ‘int’ from ‘size_t {aka long unsigned int}’ may alter its value [-Wconversion]
+E:\jOB\LinuxProject\TCPPoject\TCPProject\TCPProject\MutiServer.h(58,39): warning :    return evbuffer_get_length(m_ReadBuf);
+E:\jOB\LinuxProject\TCPPoject\TCPProject\TCPProject\MutiServer.h(58,39): warning :                                        ^
+E:\jOB\LinuxProject\TCPPoject\TCPProject\TCPProject\MutiServer.h(73,49): warning : conversion to ‘int’ from ‘ssize_t {aka long int}’ may alter its value [-Wconversion]
+E:\jOB\LinuxProject\TCPPoject\TCPProject\TCPProject\MutiServer.h(73,49): warning :    return evbuffer_copyout(m_ReadBuf, buffer, len);
+E:\jOB\LinuxProject\TCPPoject\TCPProject\TCPProject\MutiServer.h(73,49): warning :                                                  ^
+E:\jOB\LinuxProject\TCPPoject\TCPProject\TCPProject\MutiServer.h(79,40): warning : conversion to ‘int’ from ‘size_t {aka long unsigned int}’ may alter its value [-Wconversion]
+E:\jOB\LinuxProject\TCPPoject\TCPProject\TCPProject\MutiServer.h(79,40): warning :    return evbuffer_get_length(m_WriteBuf);
+E:\jOB\LinuxProject\TCPPoject\TCPProject\TCPProject\MutiServer.h(79,40): warning :                                         ^
+E:\jOB\LinuxProject\TCPPoject\TCPProject\TCPProject\MutiServer.cpp(108,6): warning : variable ‘res’ set but not used [-Wunused-but-set-variable]
+E:\jOB\LinuxProject\TCPPoject\TCPProject\TCPProject\MutiServer.cpp(108,6): warning :   int res;
+E:\jOB\LinuxProject\TCPPoject\TCPProject\TCPProject\MutiServer.cpp(108,6): warning :       ^
+E:\jOB\LinuxProject\TCPPoject\TCPProject\TCPProject\MutiServer.cpp(137,1): warning : no return statement in function returning non-void [-Wreturn-type]
+E:\jOB\LinuxProject\TCPPoject\TCPProject\TCPProject\MutiServer.cpp(137,1): warning :  }
+E:\jOB\LinuxProject\TCPPoject\TCPProject\TCPProject\MutiServer.cpp(137,1): warning :  ^
+E:\jOB\LinuxProject\TCPPoject\TCPProject\TCPProject\MutiServer.cpp(315,63): warning : conversion to ‘short int’ from ‘int’ may alter its value [-Wconversion]
+E:\jOB\LinuxProject\TCPPoject\TCPProject\TCPProject\MutiServer.cpp(315,63): warning :   event_assign(ev, m_MainBase->base, -1, flag, ptr, (void*)this);
+E:\jOB\LinuxProject\TCPPoject\TCPProject\TCPProject\MutiServer.cpp(315,63): warning :                                                                ^
+E:\jOB\LinuxProject\TCPPoject\TCPProject\TCPProject\MutiServer.cpp(177,1): warning : control reaches end of non-void function [-Wreturn-type]
+E:\jOB\LinuxProject\TCPPoject\TCPProject\TCPProject\MutiServer.cpp(177,1): warning :  }
+E:\jOB\LinuxProject\TCPPoject\TCPProject\TCPProject\MutiServer.cpp(177,1): warning :  ^
+E:\jOB\LinuxProject\TCPPoject\TCPProject\TCPProject\MutiServer.cpp(185,58): warning : ignoring return value of ‘ssize_t write(int, const void*, size_t)’, declared with attribute warn_unused_result [-Wunused-result]
+E:\jOB\LinuxProject\TCPPoject\TCPProject\TCPProject\MutiServer.cpp(185,58): warning :    write(m_Threads[i].notifySendFd, &contant, sizeof(int));
+E:\jOB\LinuxProject\TCPPoject\TCPProject\TCPProject\MutiServer.cpp(185,58): warning :                                                           ^
+E:\jOB\LinuxProject\TCPPoject\TCPProject\TCPProject\MutiServer.cpp(202,45): warning : ignoring return value of ‘ssize_t write(int, const void*, size_t)’, declared with attribute warn_unused_result [-Wunused-result]
+E:\jOB\LinuxProject\TCPPoject\TCPProject\TCPProject\MutiServer.cpp(202,45): warning :   write(sendfd, &fd, sizeof(evutil_socket_t));
+E:\jOB\LinuxProject\TCPPoject\TCPProject\TCPProject\MutiServer.cpp(202,45): warning :                                              ^
+E:\jOB\LinuxProject\TCPPoject\TCPProject\TCPProject\MutiServer.cpp(212,47): warning : ignoring return value of ‘ssize_t read(int, void*, size_t)’, declared with attribute warn_unused_result [-Wunused-result]
+E:\jOB\LinuxProject\TCPPoject\TCPProject\TCPProject\MutiServer.cpp(212,47): warning :   read(pipefd, &confd, sizeof(evutil_socket_t));
+E:\jOB\LinuxProject\TCPPoject\TCPProject\TCPProject\MutiServer.cpp(212,47): warning :                                                ^
+E:\jOB\LinuxProject\TCPPoject\TCPProject\TCPProject\MutiServer.cpp(175,32): warning : ‘listener’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+E:\jOB\LinuxProject\TCPPoject\TCPProject\TCPProject\MutiServer.cpp(175,32): warning :    evconnlistener_free(listener);
+E:\jOB\LinuxProject\TCPPoject\TCPProject\TCPProject\MutiServer.cpp(175,32): warning :                                 ^
+  Linking objects
+E:\jOB\LinuxProject\TCPPoject\TCPProject\TCPProject\obj\x64\Release\MutiServer.o：在函数‘MultiServer : error : MultiServer(int)’中：
+E:\jOB\LinuxProject\TCPPoject\TCPProject\TCPProject\MutiServer.cpp : error : 73：对‘evthread_use_pthreads’未定义的引用
+collect2 : error : ld returned 1 exit status
